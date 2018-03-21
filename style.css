@@ -1,0 +1,46 @@
+.ticTacField {
+    overflow: hidden;
+}
+
+.ticTacRow {
+    clear: both;
+}
+
+.ticTacCell {
+    float: left;
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    text-align: center;
+    font-size: 165px;
+}
+
+.ticTacCell a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: background-color .5s;
+}
+
+.ticTacCell a:hover {
+    background: #aaa;
+}
+
+.ticTacCell.winner {
+    background: rgba(96, 240, 55, 0.62);
+}
+
+.icon {
+    display: inline-block;
+}
+
+.player1:after {
+    content: 'X';
+}
+
+.player2:after {
+    content: 'O';
+}
